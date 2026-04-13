@@ -2,15 +2,19 @@ services:
   - type: web
     name: n8n
     env: docker
-     url:docker.n8n.io/n8nio/n8n
     plan: free
-    autoDeploy: true
+    dockerImage: docker.n8n.io/n8nio/n8n
+
     envVars:
-      - key: DB_TYPE
-        value: postgresdb
-      - key: DB_POSTGRESDB_HOST
-        value: aws-0-eu-west-1.pooler.supabase.com
-      - key: DB_POSTGRESDB_PORT
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: true
+      - key: N8N_BASIC_AUTH_USER
+        value: admin
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: password123
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: N8N_PORT
         value: 6543
       - key: DB_POSTGRESDB_DATABASE
         value: n8n
