@@ -11,7 +11,7 @@ services:
       - key: N8N_BASIC_AUTH_USER
         value: admin
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: password123
+        value: strong password
       - key: N8N_HOST
         value: 0.0.0.0
       - key: N8N_PORT
@@ -19,7 +19,7 @@ services:
       - key: DB_POSTGRESDB_DATABASE
         value: n8n
       - key: DB_POSTGRESDB_USER
-        value: postgres.dzugmpscnvfslqejoim
+        value: ailton
       - key: DB_POSTGRESDB_PASSWORD
         value: "*#A263865t#*"
       - key: N8N_BASIC_AUTH_ACTIVE
@@ -33,4 +33,4 @@ services:
       - key: N8N_PORT
         value: 5678
       - key: WEBHOOK_URL
-        value: https://n8n-Atendente.onrender.com/
+        value: https://n8nauto-Atendente.onrender.com/
