@@ -2,7 +2,7 @@ services:
   - type: web
     name: n8n
     env: docker
-     url: docker.n8n.io/n8nio/n8n
+     url:docker.n8n.io/n8nio/n8n
     plan: free
     autoDeploy: true
     envVars:
